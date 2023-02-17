@@ -1,10 +1,22 @@
+import os
+from os.path import join, dirname
+from dotenv import load_dotenv
+
 from datetime import datetime
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
-import certifi
-ca = certifi.where()
-client = MongoClient('mongodb://iqbalmp:iqbalmp@ac-azgceyx-shard-00-00.ligsrx6.mongodb.net:27017,ac-azgceyx-shard-00-01.ligsrx6.mongodb.net:27017,ac-azgceyx-shard-00-02.ligsrx6.mongodb.net:27017/?ssl=true&replicaSet=atlas-144b7i-shard-0&authSource=admin&retryWrites=true&w=majority', tlsCAFile=ca)
-db = client.dbspartaPoliteknik
+
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+
+MONGODB_URI = os.environ.get("MONGODB_URI")
+DB_NAME =  os.environ.get("DB_NAME")
+
+client = MongoClient(MONGODB_URI)
+
+db = client[DB_NAME]
+
+
 app = Flask(__name__)
 
 @app.route('/')
