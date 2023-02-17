@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>Method di Web</li>
+        <li>GET: Method ini digunakan untuk mengambil atau membaca data dari server. Dalam penggunaannya, request hanya
+            mengirimkan permintaan untuk membaca data, tidak untuk membuat atau memodifikasi data.
+
+            POST: Method ini digunakan untuk menambahkan data baru ke server. Dalam penggunaannya, request mengirimkan
+            data yang ingin ditambahkan ke server, dan server akan menangani proses penambahan data tersebut.
+
+            PUT: Method ini digunakan untuk memperbarui data yang sudah ada di server. Dalam penggunaannya, request
+            mengirimkan data yang ingin diperbarui ke server, dan server akan menangani proses pembaruan data tersebut.
+
+            DELETE: Method ini digunakan untuk menghapus data yang sudah ada di server. Dalam penggunaannya, request
+            hanya mengirimkan permintaan untuk menghapus data, dan server akan menangani proses penghapusan data
+            tersebut.
+
+            Keempat method ini adalah contoh dari HTTP (Hypertext Transfer Protocol) methods, dan digunakan untuk
+            mengakses dan memanipulasi data di web. Dalam pengembangan web modern, keempat method ini digunakan dalam
+            implementasi RESTful API, yang memungkinkan client untuk mengakses dan memanipulasi data melalui permintaan
+            HTTP.</li>
+        <hr>
+        <li>Bagaimana peran JavaScript di dalam arsitektur aplikasi web modern,
+            dan bagaimana pengembang mengatasi tantangan yang terkait dengan penggunaan JavaScript di browser yang
+            berbeda?</li>
+        <li>JavaScript memiliki peran penting di dalam arsitektur aplikasi web modern, karena memungkinkan interaksi
+            pengguna yang lebih dinamis dan responsif dengan aplikasi web. JavaScript digunakan untuk membuat aplikasi
+            web yang dapat berjalan pada berbagai platform, termasuk desktop, mobile, dan web. Dalam arsitektur aplikasi
+            web modern, JavaScript sering digunakan sebagai bahasa pemrograman klien, yang berarti bahwa ia dijalankan
+            pada sisi klien (di browser), dan bertanggung jawab untuk membuat interaksi pengguna yang dinamis dan
+            responsif.
+
+            Pengembangan aplikasi web modern menggunakan JavaScript juga membawa beberapa tantangan, terutama terkait
+            dengan masalah kompatibilitas browser. Beberapa browser mungkin tidak mendukung beberapa fitur JavaScript
+            terbaru, atau mungkin memiliki perbedaan dalam implementasi JavaScript yang dapat menyebabkan perbedaan
+            perilaku aplikasi web di antara berbagai browser.
+
+            Untuk mengatasi tantangan ini, pengembang web dapat menggunakan beberapa teknik, termasuk:
+
+            Feature detection: teknik ini digunakan untuk mendeteksi apakah suatu fitur JavaScript tertentu didukung
+            oleh browser yang digunakan pengguna. Jika fitur tersebut tidak didukung, aplikasi web dapat menyediakan
+            opsi alternatif yang bekerja pada browser tersebut.
+
+            Polyfills: teknik ini memungkinkan pengembang untuk menambahkan dukungan untuk fitur JavaScript tertentu
+            yang mungkin tidak didukung oleh browser tertentu. Polyfills biasanya berupa skrip JavaScript yang
+            dijalankan pada browser, dan menyediakan implementasi alternatif untuk fitur tertentu.
+
+            Browser testing: teknik ini melibatkan pengujian aplikasi web pada berbagai browser untuk memastikan bahwa
+            aplikasi berfungsi dengan benar pada setiap browser. Beberapa alat pengujian dapat membantu pengembang dalam
+            mengotomatiskan proses pengujian di berbagai browser.
+
+            Dengan mengatasi tantangan ini, pengembang dapat menciptakan aplikasi web modern yang dapat berjalan pada
+            berbagai platform dan berbagai browser, serta memberikan pengalaman pengguna yang konsisten dan responsif.
+        </li>
+        <hr>
+        <li>Bagaimana JQuery dapat ditingkatkan untuk menangani aplikasi web yang kompleks,
+            dan bagaimana menggunakan library ini untuk memecahkan masalah yang rumit?</li>
+        <li>
+            Untuk meningkatkan penggunaan jQuery dalam aplikasi web yang lebih kompleks, berikut beberapa hal yang dapat
+            dilakukan:
+
+            Menggunakan plugin atau extension: Terdapat banyak plugin dan extension yang tersedia untuk jQuery, yang
+            dapat membantu mengatasi masalah yang rumit. Beberapa contoh plugin yang umum digunakan adalah jQuery UI,
+            DataTables, dan SlickGrid.
+
+            Menggunakan pendekatan modular: Dalam aplikasi web yang kompleks, mungkin perlu memecah kode JavaScript
+            menjadi beberapa modul atau file. Ini dapat membantu mengelola kode yang lebih besar dan membuatnya lebih
+            mudah dipahami dan dirawat.
+
+            Menggunakan teknik asynchronous: Ketika melakukan permintaan ke server atau memproses data dalam JavaScript,
+            teknik asynchronous dapat membantu menghindari aplikasi web menjadi lambat atau tidak responsif. Dalam
+            jQuery, Anda dapat menggunakan metode AJAX yang asynchronous untuk memuat data dari server tanpa harus
+            memuat ulang halaman.
+
+            Menggunakan best practice: Terdapat banyak best practice dalam pengembangan JavaScript dan penggunaan
+            jQuery. Hal ini termasuk menggunakan kode yang bersih dan efisien, menghindari global variable yang
+            berlebihan, menggunakan event delegation, dan menghindari operasi DOM yang berulang-ulang.
+
+            Untuk mengatasi tantangan yang terkait dengan penggunaan jQuery di browser yang berbeda, berikut beberapa
+            cara yang dapat dilakukan:
+
+            Menggunakan versi jQuery yang kompatibel dengan berbagai browser.
+
+            Menjaga kode JavaScript Anda bersih dan sederhana, menghindari penggunaan fitur yang tidak didukung oleh
+            browser yang lebih lama.
+
+            Menggunakan fitur-fitur fallback atau polyfill, yang dapat membantu mengatasi perbedaan fitur di antara
+            browser.
+
+            Menggunakan tool seperti Modernizr, yang dapat membantu mendeteksi kemampuan browser dan memberikan solusi
+            alternatif jika diperlukan.
+        </li>
+        <hr>
+        <li>Apa yang membedakan glitch.io dengan hosting server gratis lainnya seperti pages.github.com,
+            padahal sama-sama mengambil directory dari github?</li>
+        <li>Glitch dan GitHub Pages sebenarnya memiliki tujuan yang sedikit berbeda meskipun keduanya menggunakan
+            repositori GitHub sebagai basis pengembangan web.
+
+            GitHub Pages dirancang sebagai layanan hosting statis yang mudah digunakan dan terintegrasi dengan GitHub.
+            Pengguna GitHub Pages dapat membuat situs web statis dengan menggunakan HTML, CSS, dan JavaScript, serta
+            memanfaatkan fitur seperti Jekyll untuk memudahkan pengelolaan konten.
+
+            Sementara itu, Glitch.io adalah platform pengembangan web yang lebih kompleks dan interaktif. Glitch
+            menawarkan lingkungan pengembangan berbasis web yang memungkinkan pengguna untuk membuat aplikasi web yang
+            dinamis dan interaktif dengan memanfaatkan teknologi seperti Node.js, React, dan Vue.
+
+            Dalam hal mengambil direktori dari GitHub, kedua platform tersebut memiliki fitur yang serupa. Namun, Glitch
+            menawarkan lingkungan pengembangan web yang lebih lengkap dengan fitur-fitur yang lebih kaya, seperti
+            terminal dan konsol aplikasi, serta kemampuan untuk menghubungkan aplikasi web ke layanan API lainnya.
+
+            Dengan demikian, Glitch lebih sesuai untuk pengembangan aplikasi web yang lebih kompleks dan interaktif,
+            sementara GitHub Pages lebih sesuai untuk situs web statis yang lebih sederhana. Namun, keputusan akhir
+            tetap tergantung pada kebutuhan pengguna dan kemampuan teknis mereka.</li>
+    </ul>
+</body>
+
+</html>
